@@ -4,12 +4,30 @@
     joseassis.com.br
 */
 
-*{
-    margin: 0;
-    padding: 0;
 
+/* Smartphone Portrait  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+/* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+@media (min-width: 576px){
+    body{
+        background-color: aqua;
+    }
 }
-
-body{
-    background-color: black;
+/* Tablet Portrait  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+@media (min-width: 768px){
+    body{
+        background-color: #ff0;
+    }
+}
+/* Tablet Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+@media (min-width: 992px){
+    body{
+        background-color: #f60;
+    }
+}
+/* Pc               >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+@media (min-width: 1200px){
+    body{
+        background-color: red;
+    }
 }
