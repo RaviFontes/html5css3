@@ -1,0 +1,15 @@
+/* 
+    Folha de style do site one page HTML 5  e CSS 3 
+    @author Professor Jose de Assis
+    joseassis.com.br
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    background-color: black;
+}
