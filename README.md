@@ -33,4 +33,5 @@ Aprenda HTML5, CSS3 e SEO de forma simoles, pratica e objetiva desenvolvendo pas
 ### Validação W3C
 
 [validação HTML](https://validator.w3.org/nu/#file)
-[validação CSS#](https://jigsaw.w3.org/css-validator/#validate_by_upload)
+
+[validação CSS](https://jigsaw.w3.org/css-validator/#validate_by_upload)
