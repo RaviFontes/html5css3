@@ -5,6 +5,28 @@
 */
 
 
+/*Import Fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans:wght@400;700&display=swap');
+
+/*Reset CSS*/
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+}
+
+/*Lauout*/
+.container{
+    margin: 0 auto;
+}
+
+
 /* Smartphone Portrait (Vertical)>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
 
@@ -13,11 +35,19 @@
     body{
         background-color: aqua;
     }
+    
+    /*Lauout*/
+    .container{
+        max-width: 540px;
+    }
 }
 /* Tablet Portrait (Vertical)  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 768px){
     body{
         background-color: #ff0;
+    }
+    .container{
+        max-width: 720px;
     }
 }
 /* Tablet Landscape (Horizontal)>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
@@ -25,10 +55,17 @@
     body{
         background-color: #f60;
     }
+    .container{
+        max-width: 960px;
+        background-color: #7f0;
+    }
 }
 /* Pc (Monitores/Nootebook dos antigos aos mais atuais)>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 1200px){
     body{
         background-color: red;
+    }
+    .container{
+        max-width: 1140px;
     }
 }
