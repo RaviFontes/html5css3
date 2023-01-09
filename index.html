@@ -15,19 +15,31 @@
 <body>
     <!-- Cabeçalho -->
     <header>
-        <div class="container">
-
+        <div class="container flex">
+            <div id="logo">
+                <img src="./img/logo.png" alt="hall 9000">
+            </div>
+<nav>
+                    <input type="checkbox" id="check">
+                    <label for="check">&#x268c;</label>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#conteudo">Conteúdo</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </nav>
         </div>
     </header>
     <!-- destaques -->
-    <main>
+    <main id="inicio">
         <div class="container">
             <h1>HTML 5 e CSS 3</h1>
             <h2>Você faz. Você apreende.</h2>    
         </div>
     </main>
     <!-- Sobre -->
-    <section>
+    <section id="sobre">
         <div class="container">
             <h2>Aprender na prática.</h2>
         </div>
@@ -45,7 +57,7 @@
         </div>
     </section>
     <!-- Conteudo -->
-    <section>
+    <section id="conteudo">
         <div class="container">
             <h2>Conteúdo</h2>
             <h3>HTML5</h3>
@@ -54,11 +66,11 @@
         </div>
     </section>
     <!-- Rodapé -->
-    <footer>
+    <footer id="contato">
         <div class="container">
             
-
         </div>
     </footer>
+    <a href="#inicio" id="topo"><img src="./img/topo.png" alt="Topo do site"></a>
 </body>
 </html>
