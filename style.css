@@ -30,6 +30,10 @@ body{
     display: flex;
     justify-content: space-between;
 }
+.flex2{
+    display: flex;
+    align-items: center;
+}
 /* Botão */
 
 .botao{
@@ -100,12 +104,14 @@ nav ul li a {
     height: 75vh; /*Define o tamnho de 75% de qualquer dispositivo*/
     background-image: url(img/banner.jpg);
     background-size: cover;
+    background-position: center;
     color: #fff;
     /* Centralizando conteudo (Pode ser usado tanto na horizontal quanto vertical).*/
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
+
 }
 
 main h1{
@@ -116,8 +122,39 @@ main h2{
     font-size: 1em;
     margin: 20px 0px 50px 0px;
     color:#fff;
-
 }
+
+
+/* Sobre */
+
+ #sobre{
+    padding: 50px 0px;
+    background: url(img/background.png);
+    background-size: cover;
+    background-position: center; /* Centralizando a Imagem */
+} 
+
+#destaqueSobre{
+    display: none;
+}
+
+#textoSobre{
+    color:#fff;
+    padding: 0px 10px;
+}
+
+#textoSobre h2{
+    margin-bottom: 10px;
+}
+
+.topicosSobre{
+    margin-top: 20px;
+}
+
+.topicosSobre img{
+    margin-right: 10px;
+}
+
 
 /* Smartphone Landscape (Horizontal)>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 576px){
@@ -146,6 +183,7 @@ main h2{
     main h2{
         font-size: 2em;
     }
+   
 }
 /* Tablet Landscape (Horizontal)>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 992px){
@@ -199,5 +237,19 @@ main h2{
     }
     nav ul li a:hover{
         color: red;
+    }
+
+    /* Sobre */ 
+    #sobre{
+        background-attachment: fixed; /* efeito paralax em pc (background fixado)*/
+    }
+
+    #DestaqueSobre{
+        display: inline; 
+    }
+
+    #destaqueSobre img{
+        border-radius: 50px;
+        margin-right: 50px;
     }
 }
