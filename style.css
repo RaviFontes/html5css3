@@ -72,7 +72,11 @@ header{
 
 label{
     font-size: 3em;
-    padding: 15px;
+    /* */
+    position: fixed;
+    top: 5px;
+    right: 15px;
+    color: rgba(0, 0, 0, 0.5);/* deixando os icones tranparentes de Voltar para top e menu hamburgue*/
 }
 
 nav ul{
