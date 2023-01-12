@@ -34,6 +34,10 @@ body{
     display: flex;
     align-items: center;
 }
+.flex3{
+    display: flex;
+    flex-direction: column;
+}
 /* Botão */
 
 .botao{
@@ -159,6 +163,24 @@ main h2{
     margin-right: 10px;
 }
 
+/* One Page */
+/*paronização do conteudo */
+#onepage{
+    padding: 50px 10px;
+}
+#onepage h2 {
+    margin-bottom: 10px;
+}
+#onepage p {
+    margin-bottom: 25px;
+}
+
+/*Ajustando video incorporado do youtube*/
+#video iframe  {
+    width: 340px; /* Largura de segurançapara smartphone */
+    height: 191px; /*usar o site https://www.digitalrebellion.com/webapps/aspectcalc para calcular a proporção */
+    border: 0;
+}
 
 /* Smartphone Landscape (Horizontal)>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 576px){
@@ -171,6 +193,14 @@ main h2{
   main h1, main h2{
     text-shadow: #000 0.05em 0.05em 0.05em;
   }
+
+  /* One Page */
+
+  #video iframe{
+    width: 560px; /* Largura de segurançapara smartphone */
+    height: 315px; /*usar o site https://www.digitalrebellion.com/webapps/aspectcalc para calcular a proporção */
+    }
+
 }
 /* Tablet Portrait (Vertical)  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 768px){
@@ -256,4 +286,11 @@ main h2{
         border-radius: 50px;
         margin-right: 50px;
     }
+
+    /* One Page */
+    .flex3{
+        flex-direction: row;
+        align-items: center;
+    }
+     
 }
