@@ -30,6 +30,18 @@ body{
     display: flex;
     justify-content: space-between;
 }
+/* Botão */
+
+.botao{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: 700;
+    background-color: #c00000;
+    padding: 10px 40px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+}
 
 /*Topo do site*/
 #topo{
@@ -83,17 +95,56 @@ nav ul li a {
     text-decoration: none;
     color: #fff;
 }
+  /*Destaque*/ 
+  main{
+    height: 75vh; /*Define o tamnho de 75% de qualquer dispositivo*/
+    background-image: url(img/banner.jpg);
+    background-size: cover;
+    color: #fff;
+    /* Centralizando conteudo (Pode ser usado tanto na horizontal quanto vertical).*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+main h1{
+    font-size: 2.5em;
+    color:#fff;
+}
+main h2{
+    font-size: 1em;
+    margin: 20px 0px 50px 0px;
+    color:#fff;
+
+}
+
 /* Smartphone Landscape (Horizontal)>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 576px){
     /*Lauout*/
     .container{
         max-width: 540px;
     }
+
+    /* Destaque */
+  main h1, main h2{
+    text-shadow: #000 0.05em 0.05em 0.05em;
+  }
 }
 /* Tablet Portrait (Vertical)  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 768px){
     .container{
         max-width: 720px;
+    }
+    /* Destaque */
+    main {
+        height: 45vh;
+    }
+    main h1{
+        font-size: 5.5em;
+    }
+    main h2{
+        font-size: 2em;
     }
 }
 /* Tablet Landscape (Horizontal)>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
@@ -102,6 +153,12 @@ nav ul li a {
         max-width: 960px;
        
     }
+    /* Destaque */
+    main{
+        height: 70vh;
+    }
+
+ 
 }
 /* Pc (Monitores/Nootebook dos antigos aos mais atuais)>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 1200px){
